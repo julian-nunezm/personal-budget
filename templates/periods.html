@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Periods</h1>
+<ul>
+{% for period in all_periods_list %}
+    <li>{{ period.name }}</li>
+{% endfor %}
+</ul>
+{% endblock content %}

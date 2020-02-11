@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Investments</h1>
+<ul>
+{% for investment in all_investments_list %}
+    <li>{{ investment.name }}: {{investment.total_amount}}</li>
+{% endfor %}
+</ul>
+{% endblock content %}
